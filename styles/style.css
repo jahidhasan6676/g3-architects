@@ -137,6 +137,76 @@ body{
     margin-bottom:20px;
 }
 
+/* love-and-enjoy style */
+.love-and-enjoy{
+    max-width:1300px;
+    /* height:700px; */
+    
+    display:flex;
+    margin:0 auto;
+    gap:200px;
+    margin-bottom:200px;
+}
+.love-title{
+    font-weight:700;
+    font-size:1.8rem;
+    color:rgba(19, 19, 19, 1);
+    border-left: 3px solid rgba(255, 144, 14, 1);
+    padding-left:20px;
+    margin-bottom:15px;
+}
+.love-description{
+    color:rgba(114, 114, 114, 1);
+    font-size:0.8rem;
+
+}
+.love-content{
+    width:40%;
+}
+
+
+.card-title{
+    font-weight:700;
+    font-size:1rem;
+    padding:20px;
+
+}
+.card-description{
+    color:rgba(114, 114, 114, 1);
+    font-size:0.8rem;
+    padding:20px;
+}
+.feature-card{
+    box-shadow:0 4px 30px 0 rgba(0, 0, 0, 0.06);
+    gap:30px;
+    border-radius:8px;
+    
+}
+.love-pic{
+    /* max-width:1000px; */
+    height:750px;
+    
+}
+.love-pic img{
+    width:100%;
+    height:100%;
+}
+.year{
+    font-weight:700;
+    font-size:2.5rem;
+    color:rgba(255, 255, 255, 1);
+}
+.experience{
+    font-weight:500;
+    font-size:1rem;
+    color:rgba(255, 255, 255, 1);
+
+}
+#btn{
+    padding:20px 18px 20px 18px;
+    margin-left:-100px;
+    margin-top:-100px;
+}
 
 /* media query */
 @media screen and (max-width:576px) {
@@ -158,6 +228,22 @@ body{
     }
     .team-content{
         margin-left:20px;
+    }
+    .love-and-enjoy{
+        margin-top:850px;
+        flex-direction: column;
+        gap:30px;
+    }
+    .love-content{
+        width:100%;
+    }
+    .love-pic img{
+        height:50%;
+        width:100%;
+    }
+    #btn{
+        margin-left:40px;
+        margin-top:40px;
     }
     
 }
