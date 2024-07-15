@@ -1,0 +1,163 @@
+/* font family */
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+body{
+    font-family: "Work Sans", sans-serif;
+}
+/* universal */
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+/* universal style end */
+
+/* shared all style */
+.btn-primary{
+    background-color: rgba(255, 144, 14, 1);
+    font-size:0.8rem;
+    padding:8px 8px 8px 8px;
+    border-radius:3px;
+    color:white;
+    border:none;
+
+}
+
+/* display-flex */
+.display-flex{
+    display:flex;
+}
+
+/* header part style */
+.header{
+    max-width:100%;
+    height:900px;
+    margin-bottom:100px;
+    
+    background-color:rgba(255, 144, 14, 0.1);
+}
+
+
+/* nav er style */
+.nav{
+    justify-content: space-between;
+    margin:0 auto;
+    /* margin-top:30px; */
+    padding:30px 120px;
+}
+.list-item{
+    list-style:none;
+    
+}
+.link-item{
+    text-decoration:none;
+    color:rgba(66, 66, 66, 1);
+    
+}
+.navbar{
+    gap:30px;
+    
+}
+.nav-title{
+    font-weight:600;
+    font-size:2rem;
+    color:rgba(19, 19, 19, 1);
+
+}
+/* banner part */
+.banner-content{
+    max-width:600px;
+    margin:0 auto;
+    text-align:center;
+    margin-top:40px;
+
+    
+}
+.banner-title{
+    color:rgba(19, 19, 19, 1);
+    font-weight:600;
+    font-size:2.5rem;
+}
+.banner-description{
+    color:rgba(114, 114, 114, 1);
+    font-size:1rem;
+}
+.banner-image{
+    max-width:1300px;
+    height:540px;
+    margin:0 auto;
+    margin-top:30px;
+}
+.banner-image img{
+    width:100%;
+    height:100%;
+}
+
+/* team work part style */
+.teams{
+    max-width:1300px;
+    height:500px;
+    
+    display:flex;
+    align-items:center;
+    margin:0 auto;
+    margin-bottom:100px;
+}
+.team-img-container{
+    
+    display:grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap:20px;
+}
+.team-img-container img{
+    width:300px;
+    height:240px;
+}
+.team-content{
+    margin-left:100px;
+
+}
+.team-title{
+    color:rgba(114, 114, 114, 1);
+    font-weight:600;
+    font-size:2rem;
+}
+.black{
+    color:rgba(19, 19, 19, 1);
+    font-weight:700;
+
+}
+.orange{
+    font-weight:700;
+    color:rgba(255, 144, 14, 1);
+}
+.team-description{
+    color:rgba(114, 114, 114, 1);
+    font-size:0.8rem;
+    margin-top:20px;
+    margin-bottom:20px;
+}
+
+
+/* media query */
+@media screen and (max-width:576px) {
+    .nav{
+        flex-direction: column;
+    }
+    .navbar{
+        flex-direction:column;
+    }
+    .banner-image{
+        height:300px;
+    }
+    .teams{
+        flex-direction: column;
+        gap:50px;
+    }
+    .team-img-container{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .team-content{
+        margin-left:20px;
+    }
+    
+}
