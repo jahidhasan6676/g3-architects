@@ -208,6 +208,88 @@ body{
     margin-top:-100px;
 }
 
+/* facts container style */
+.facts-title{
+    font-size:700;
+    font-size:1.5rem;
+    color:rgba(19, 19, 19, 1);
+    margin-bottom:15px;
+}
+.facts-description{
+    font-size:0.8rem;
+    color:rgba(114, 114, 114, 1);
+
+}
+
+/* facts container style */
+.facts-container{
+    max-width:1300px;
+    height:300px;
+    margin:0 auto;
+    margin-bottom:100px;
+}
+.facts-details{
+    width:1300px;
+    margin-top:60px;
+    margin-left:80px;
+    display:grid;
+    grid-template-columns: repeat(4, 1fr);
+    
+    
+}
+.fact{
+    border: 1px solid rgba(255, 144, 14, 1);
+    width:150px;
+    height:150px;
+    border-radius:8px;
+    display:flex;
+    align-items:center;
+    justify-content: center;
+    text-align:center;
+    
+}
+.fact-number{
+    color:rgba(66, 66, 66, 1);
+    font-size:1.5rem;
+}
+.fact-name{
+    color:rgba(114, 114, 114, 1);
+    font-weight:600;
+    font-size:0.8rem;
+}
+
+/* sponsor part */
+.sponsor-title{
+    color:rgba(19, 19, 19, 1);
+    font-weight:700;
+    font-size:1.5rem;
+}
+.sponsor-description{
+    color:rgba(114, 114, 114, 1);
+    font-size:0.8rem;
+}
+.sponsor-content{
+    text-align: center;
+}
+.sponsor{
+    width:1300px;
+    margin:0 auto;
+    margin-bottom:100px;
+}
+.sponsor-company img{
+    width:80px;
+    height:50px;
+    filter:grayscale(100%);
+    
+}
+.sponsor-company {
+    display:grid;
+    grid-template-columns: repeat(5, 1fr);
+    margin-top:50px;
+    margin-left:150px;
+}
+
+
 /* media query */
 @media screen and (max-width:576px) {
     .nav{
@@ -242,8 +324,34 @@ body{
         width:100%;
     }
     #btn{
-        margin-left:40px;
-        margin-top:40px;
+        margin-left:90px;
+        margin-top:0px;
     }
+    
+    .facts-details{
+        grid-template-columns: repeat(1, 1fr);
+        gap:15px;
+        width:0%;
+    }
+    .facts-container{
+        align-items: center;
+        margin-top:-250px;
+    }
+    .sponsor{
+        width:100%;
+        margin-top:700px;
+        
+    }
+    .sponsor-company{
+        grid-template-columns: repeat(1, 1fr);
+        gap:40px;
+        align-items: center;
+    }
+    
+        
+        
+        
+   
+    
     
 }
